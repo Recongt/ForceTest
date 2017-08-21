@@ -1,0 +1,6 @@
+<!--
+ - Created by Adam.Czyzynski on 16-Aug-17.
+ -->
+
+<apex:page id="CartPage" controller="Cart">
+</apex:page>

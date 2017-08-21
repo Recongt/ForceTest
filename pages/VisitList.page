@@ -1,0 +1,19 @@
+<apex:page showHeader="false" controller="VisitsListController" tabStyle="Account" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:tabPanel switchType="ajax">
+            <apex:tab label="All Products">
+                <apex:pageBlockTable value="{! visits }" var="vis">
+
+                    <apex:column title="Date" value="{! vis.Date__c }"/>
+                    <apex:column title="Name" value="{! vis.Name}"/>
+                    <apex:column title="Created by" value="{! vis.CreatedById}"/>
+                    <apex:column title="Finished" value="{! vis.Finished__c}"/>
+
+                </apex:pageBlockTable>
+            </apex:tab>
+
+        </apex:tabPanel>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,20 @@
+<apex:page id="orderList" controller="OrderList">
+    <apex:form >
+        <apex:pageBlock >
+                    <apex:pageBlockTable value="{!orders}" var="ord">
+                        <apex:column title="ID" value="{!ord.Id}"/>
+                        <apex:column title="Net" value="{!ord.Order__c}"/>
+                        <apex:column title="Gross" value="{!ord.Order_Value__c}"/>
+                        <apex:column title="Description" value="{!ord.Description}"/>
+                        <apex:column title="Type" value="{!ord.RecordType.Name}"/>
+                        <apex:column title="Date" value="{! ord.EndDate }"/>
+
+                    </apex:pageBlockTable>
+                <apex:outputField value="{!user.LastName}"/>
+            <apex:commandButton value="lul" onClick="OpenPage(); return false;"/>
+            <!--<apex:actionFunction name="OpenPage" action="{!page1}"/>-->
+
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

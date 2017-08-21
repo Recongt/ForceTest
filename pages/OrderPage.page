@@ -1,0 +1,15 @@
+<!--
+ - Created by Adam.Czyzynski on 14-Aug-17.
+ -->
+
+<apex:page id="OrderPage" controller="OrderPageController">
+
+    <apex:form >
+        <apex:pageBlock >
+            <apex:tabPanel switchType="ajax">
+
+
+            </apex:tabPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

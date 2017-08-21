@@ -1,0 +1,7 @@
+<!--
+ - Created by Adam.Czyzynski on 14-Aug-17.
+ -->
+
+<aura:component description="Component">
+    <p>Lul</p>
+</aura:component>
